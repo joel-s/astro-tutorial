@@ -1,3 +1,7 @@
+---
+import Hamburger from "./Hamburger.astro";
+---
+
 <style>
   .nav-links {
     width: 100%;
@@ -43,8 +47,13 @@
   }
 </style>
 
+<Hamburger />
 <div class="nav-links">
   <a href="/">Home</a>
   <a href="/about/">About</a>
   <a href="/blog">Blog</a>
 </div>
+
+<script>
+  import "../scripts/menu.js";
+</script>
